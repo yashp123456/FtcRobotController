@@ -1,0 +1,83 @@
+package org.firstinspires.ftc.teamcode.Code101;
+// --- IMPORTS ---
+import com.acmerobotics.dashboard.FtcDashboard;                // For using FTC Dashboard
+import com.acmerobotics.dashboard.telemetry.MultipleTelemetry; // For showing telemetry on both driver station and dashboard
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;   // Basic OpMode structure
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;         // Lets the code run as a TeleOp
+import com.qualcomm.robotcore.hardware.DcMotor;                // For using motors
+import com.qualcomm.robotcore.hardware.DcMotorSimple;          // For motor direction control
+import com.qualcomm.robotcore.util.ElapsedTime;                // Timer
+
+// --- TELEOP NAME ---
+@TeleOp(name="MotorOnUChannel")
+public class MotorOnUChannel extends LinearOpMode {
+
+    // --- VARIABLES ---
+    // Make a DcMotor called uChannel
+    private DcMotor wheelOne;
+    // Make a timer called runtime
+    private ElapsedTime runtime = new ElapsedTime();
+    // Make a dashboard variable called ftcDashboard
+    private FtcDashboard ftcDashboard;
+
+    @Override
+    public void runOpMode() {
+
+        // --- SETUP DASHBOARD ---
+        // Connect the dashboard to telemetry
+        this.ftcDashboard = FtcDashboard.getInstance();
+        this.telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
+
+
+        // --- SHOW "INITIALIZING" ON DRIVER STATION ---
+        // Tell the driver the robot is starting up
+        telemetry.addData("Status", "Initialized...");
+        telemetry.update();
+
+        // --- CONNECT HARDWARE ---
+        // Link uChannel to a motor from the config
+        wheelOne = hardwareMap.get(DcMotor.class, "wheelOne");
+
+        // --- SET MOTOR MODE AND DIRECTION ---
+        // Set motor to run without encoders
+        wheelOne.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        // Set motor direction (FORWARD or REVERSE)
+        wheelOne.setDirection(DcMotorSimple.Direction.REVERSE);
+
+        // --- SHOW "READY" ON DRIVER STATION ---
+        // Tell the driver the robot is ready
+        telemetry.addData("Status", "Initialized");
+        telemetry.update();
+
+        // --- WAIT FOR START BUTTON ---
+        // Pause until the match starts
+        waitForStart();
+
+        // --- RESET TIMER ---
+        // Reset the runtime clock
+        runtime.reset();
+
+        // --- MAIN LOOP ---
+        while (opModeIsActive()) {
+            // --- GAMEPAD CONTROLS ---
+            // If X is pressed, spin motor counter-clockwise
+            if(gamepad1.x) {
+                wheelOne.setPower(1);
+                telemetry.addData("motor spin counter-clockwise","clicked");
+            }
+            // If Y is pressed, spin motor clockwise
+            else if (gamepad1.y) {
+                wheelOne.setPower(-1);
+                telemetry.addData("motor spin clockwise","clicked");
+            }
+            // Else, stop the motor
+            else {
+                wheelOne.setPower(0);
+            }
+
+            // --- UPDATE TELEMETRY ---
+            // Show info on the driver station
+            telemetry.update();
+        }
+    }
+}
