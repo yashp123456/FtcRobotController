@@ -1,1 +1,159 @@
+package org.firstinspires.ftc.teamcode.Code101;
 
+// IMPORT STATEMENTS ARE PROVIDED
+
+import com.acmerobotics.dashboard.FtcDashboard;
+import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.util.ElapsedTime;
+
+
+// =====================================================
+// TODO: Give your TeleOp a name
+// =====================================================
+@TeleOp(name = "________________")
+
+
+// =====================================================
+// TODO: Create your class.
+// It should extend LinearOpMode.
+// =====================================================
+public class ______________________________ {
+
+    // =================================================
+    // VARIABLES
+    // =================================================
+
+    // TODO: Create an ElapsedTime variable called runtime.
+
+
+
+    // TODO: Create an FTC Dashboard variable.
+
+
+
+    // TODO: Create a Servo variable for your claw.
+
+
+
+
+    // =================================================
+    // RUN OPMODE
+    // =================================================
+
+    @Override
+    public void runOpMode() {
+
+        // =============================================
+        // CONNECT TO FTC DASHBOARD
+        // =============================================
+
+        // TODO: Get the dashboard instance.
+
+
+
+        // TODO: Connect telemetry to both
+        // the Driver Station and Dashboard.
+
+
+
+
+        // =============================================
+        // SHOW "INITIALIZING"
+        // =============================================
+
+        // TODO: Display "Initializing..."
+        // using telemetry.
+
+
+
+
+        // =============================================
+        // CONNECT HARDWARE
+        // =============================================
+
+        // TODO: Connect your servo from the
+        // hardware map.
+        // Hardware name: "claw1"
+
+
+
+
+        // =============================================
+        // SHOW "READY"
+        // =============================================
+
+        // TODO: Display "Initialized"
+
+
+
+
+        // =============================================
+        // WAIT FOR START
+        // =============================================
+
+        // TODO: Wait for the driver to press START.
+
+
+
+
+        // =============================================
+        // RESET TIMER
+        // =============================================
+
+        // TODO: Reset the runtime.
+
+
+
+
+        // =============================================
+        // MAIN LOOP
+        // =============================================
+
+        while (opModeIsActive()) {
+
+            // =========================================
+            // BUTTON CONTROLS
+            // =========================================
+
+            // TODO:
+            // If the A button is pressed,
+            // set the claw to position 0.75.
+
+
+
+
+            // TODO:
+            // Else if the B button is pressed,
+            // set the claw to position 0.25.
+
+
+
+
+            // =========================================
+            // TELEMETRY
+            // =========================================
+
+            // TODO:
+            // Tell the driver whether the claw
+            // is opening or closing.
+
+
+
+
+
+
+
+            // TODO:
+            // Update telemetry.
+
+
+
+
+        }
+
+    }
+
+}
