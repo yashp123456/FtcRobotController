@@ -1,0 +1,137 @@
+package org.firstinspires.ftc.teamcode.Code101;
+
+// --- IMPORTS ---
+import com.acmerobotics.dashboard.FtcDashboard;
+import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.util.ElapsedTime;
+
+// --- TELEOP NAME ---
+@TeleOp(name = "")
+public class __________________ extends LinearOpMode {
+
+    // =========================
+    // VARIABLES
+    // =========================
+
+    // Create a DcMotor variable
+
+
+    // Create a timer
+
+
+    // Create a dashboard variable
+
+
+
+    @Override
+    public void runOpMode() {
+
+        // =========================
+        // DASHBOARD SETUP
+        // =========================
+
+        // Get an instance of FTC Dashboard
+
+
+
+        // Connect dashboard telemetry to Driver Station telemetry
+
+
+
+
+        // =========================
+        // INITIAL TELEMETRY
+        // =========================
+
+        // Display "Initializing..."
+
+
+
+
+        // =========================
+        // CONNECT HARDWARE
+        // =========================
+
+        // Connect the lift motor from the Robot Configuration
+
+
+
+
+        // =========================
+        // MOTOR SETUP
+        // =========================
+
+        // Set the motor to run without encoders
+
+
+
+
+        // Set the motor direction
+
+
+
+
+        // =========================
+        // READY TELEMETRY
+        // =========================
+
+        // Display "Initialized"
+
+
+
+
+        // =========================
+        // WAIT FOR START
+        // =========================
+
+        
+
+
+
+        // =========================
+        // RESET TIMER
+        // =========================
+
+        
+
+
+
+        // =========================
+        // MAIN LOOP
+        // =========================
+
+        while (opModeIsActive()) {
+
+            // If D-pad Up is pressed:
+            // - Move the arm upward
+            // - Display telemetry
+
+
+
+
+            // Else if D-pad Down is pressed:
+            // - Move the arm downward
+            // - Display telemetry
+
+
+
+
+            // Otherwise:
+            // - Stop the motor
+
+
+
+
+            // =========================
+            // UPDATE TELEMETRY
+            // =========================
+
+            
+
+        }
+    }
+}
