@@ -1,0 +1,133 @@
+package org.firstinspires.ftc.teamcode.Code101;
+
+// --- IMPORTS ---
+import com.acmerobotics.dashboard.FtcDashboard;
+import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.util.ElapsedTime;
+
+// --- TELEOP NAME ---
+@TeleOp(name = "")
+public class __________________ extends LinearOpMode {
+
+    // =========================
+    // VARIABLES
+    // =========================
+
+    // Create a motor variable
+
+
+    // Create a timer
+
+
+    // Create a dashboard variable
+
+
+
+    @Override
+    public void runOpMode() {
+
+        // =========================
+        // DASHBOARD SETUP
+        // =========================
+
+        // Connect FTC Dashboard to telemetry
+
+
+
+
+        // =========================
+        // INITIAL TELEMETRY
+        // =========================
+
+        // Display "Initialized..."
+        
+
+
+
+        // =========================
+        // CONNECT HARDWARE
+        // =========================
+
+        // Connect your motor from the configuration
+
+
+
+
+        // =========================
+        // MOTOR SETUP
+        // =========================
+
+        // Set the motor mode
+
+
+
+
+        // Set the motor direction
+
+
+
+
+        // =========================
+        // READY TELEMETRY
+        // =========================
+
+        // Display "Initialized"
+        
+
+
+
+        // =========================
+        // WAIT FOR START
+        // =========================
+
+        
+
+
+
+        // =========================
+        // RESET TIMER
+        // =========================
+
+        
+
+
+
+        // =========================
+        // MAIN LOOP
+        // =========================
+
+        while (opModeIsActive()) {
+
+            // If X is pressed:
+            // - Spin the motor one direction
+            // - Display telemetry
+
+
+
+
+            // Else if Y is pressed:
+            // - Spin the motor the opposite direction
+            // - Display telemetry
+
+
+
+
+            // Otherwise:
+            // - Stop the motor
+
+
+
+
+            // =========================
+            // UPDATE TELEMETRY
+            // =========================
+
+            
+
+        }
+    }
+}
