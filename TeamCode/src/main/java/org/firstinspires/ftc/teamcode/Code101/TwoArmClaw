@@ -1,0 +1,124 @@
+package org.firstinspires.ftc.teamcode.Code101;
+
+// --- IMPORTS ---
+import com.acmerobotics.dashboard.FtcDashboard;
+import com.acmerobotics.dashboard.telemetry.MultipleTelemetry;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.hardware.Servo;
+
+// --- TELEOP NAME ---
+@TeleOp(name = "")
+public class __________________ extends LinearOpMode {
+
+    // =========================
+    // VARIABLES
+    // =========================
+
+    // Create a timer
+
+
+    // Create a dashboard variable
+
+
+    // Create two Servo variables
+
+
+
+    @Override
+    public void runOpMode() {
+
+        // =========================
+        // DASHBOARD SETUP
+        // =========================
+
+        // Get an instance of FTC Dashboard
+
+
+
+        // Connect dashboard telemetry to Driver Station telemetry
+
+
+
+
+        // =========================
+        // INITIAL TELEMETRY
+        // =========================
+
+        // Display "Initializing..."
+
+
+
+
+        // =========================
+        // CONNECT HARDWARE
+        // =========================
+
+        // Connect the first servo from the Robot Configuration
+
+
+
+        // Connect the second servo from the Robot Configuration
+
+
+
+
+        // =========================
+        // READY TELEMETRY
+        // =========================
+
+        // Display "Initialized"
+
+
+
+
+        // =========================
+        // WAIT FOR START
+        // =========================
+
+        
+
+
+
+        // =========================
+        // RESET TIMER
+        // =========================
+
+        
+
+
+
+        // =========================
+        // MAIN LOOP
+        // =========================
+
+        while (opModeIsActive()) {
+
+            // If the right bumper is pressed:
+            // - Open both claws
+            // - Display telemetry
+
+
+
+
+
+            // If the left bumper is pressed:
+            // - Close both claws
+            // - Display telemetry
+
+
+
+
+
+            // =========================
+            // UPDATE TELEMETRY
+            // =========================
+
+            
+
+        }
+    }
+}
